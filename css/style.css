@@ -63,6 +63,19 @@ textarea {
     line-height: 1.3; }
   #editor div hr {
     border: dashed 1px rgba(255, 255, 255, 0.7); }
+  #editor div em {
+    font-weight: bold; }
+  #editor div ol li {
+    list-style-type: decimal; }
+  #editor div a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    text-decoration: none;
+    transition: 0.2s; }
+    #editor div a:hover {
+      text-decoration: none;
+      color: #daedff;
+      border-bottom: 1px solid #7bc0ff; }
 
 .controllerArea {
   display: flex;
