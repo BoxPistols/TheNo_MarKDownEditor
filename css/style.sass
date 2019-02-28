@@ -14,7 +14,7 @@ textarea,
   margin: 0
   display: inline-block
   box-sizing: border-box
-  width: 49%
+  width: 50%
   height: 100%
   height: calc(100% - 50px)
   vertical-align: top
@@ -40,22 +40,25 @@ textarea
 #editor div
   float: right
   // background: linear-gradient(-45deg, rgba(33, 32, 84, 0.7), rgba(101, 66, 30, 0.88))
-  background-image: linear-gradient(135deg, #ffc46e, #f043bf 100%)
+  background-image: linear-gradient(135deg,#f77f31 20%,#ffc46e 100%)
 
   line-height: 1.5
   overflow-x: scroll
 
   code
-    color: #c66
-    background-color: #f9f9f9
+    color: #009688
+    background-color: #f9f9f99c
     padding: 10px 5px
-    border-radius: 3px
-    border: 1px solid #ccc
+    border: none
+    border-radius: 0px
+    padding: 2px
+    line-height : 1.2
+    text-shadow: 1px 1px 0 #ccc
 
   h1
     font-size: 2.2em
-    border-bottom: 1px solid #999
-
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+    padding-bottom: .15em
   h2
     font-size: 1.8em
 
@@ -75,21 +78,33 @@ textarea
   align-items: center
   // background-color: aliceblue
   background-image: linear-gradient(-45deg, #f9da00fa, #20adffd1)
-  border-top: 1px solid #fff
+  // border-top: 1px solid #fff
   height: 50px
   width: 100%
   position: absolute
   bottom: 0
   left: 0
   z-index: 10
-
+  .authorArea
+    display: flex
+    align-items: center
+    height: 100%
+    position: absolute
+    left: 12px
+    bottom: 0px
+    h1
+      color: #fff
+      font-size: 13px
+      line-height: 1
+      margin: 0
   button.btn
     margin: 5px 10px
     padding: 0px 30px
     width: 120px
     height: 35px
-
+    background-image: linear-gradient(-45deg, rgba(233, 30, 99, 0.53) 30%, #ff6a3b)
   .info
-    font-size: 10px
+    font-size: 12px
     margin: 0
     line-height: 1.2
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.6)
